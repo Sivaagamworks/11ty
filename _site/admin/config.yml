@@ -6,14 +6,14 @@ media_folder: "_site/imgaes/uploads"
 public_folder: "/imgaes/uploads"     
 
 collections:
-  - name:"posts"
-    label:"posts"
-    folder:"posts"
+  - name: "posts"
+    label: "posts"
+    folder: "posts"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label:"Layout", name:"layout", widget:"hidden", default:"layouts/post.njk"}
-      - {label:"Title", name:"title", widget:"string"}
-      - {label:"Description", name:"description", widget:"string"}
-      - {label:"Date", name:"date", widget:"date",default:""}
-      - {label:"Post Body",name:"body",widget:"markdown"}
-      - {label:"Featured Image",name:"featuredImage",widget:"image"}  
+      - { label : "Layout", name : "layout", widget : "hidden", default : "layouts/post.njk"}
+      - { label : "Title", name : "title", widget : "string"}
+      - { label : "Description", name : "description", widget : "string"}
+      - { label : "Date", name: "date", widget : "date",default : ""}
+      - { label : "Post Body",name: "body",widget : "markdown"}
+      - { label : "Featured Image",name : "featuredImage",widget : "image"}  
